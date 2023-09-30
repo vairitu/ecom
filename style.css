@@ -28,7 +28,7 @@ nav .left ul {
     gap: 20px;
     list-style: none;
 }
- 
+
 nav .left ul a {
     text-decoration: none;
     color: hsl(219, 9%, 45%);
@@ -49,12 +49,137 @@ nav .right .avatar {
     width: 35px;
     height: auto;
 }
+
+.product .product-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 .product .product-image .big {
     width: 25rem;
     height: auto;
     object-fit: cover;
     border-radius: 15px;
 }
+
 .product .product-image .thumbs img {
     border-radius: 15px;
+    width: 92.5px;
 }
+
+.product .product-image .thumbs {
+    display: flex;
+    gap: 10px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+.product-image,
+.product-info {
+    width: 50%;
+
+}
+
+.product .product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.product .product-info h5 {
+    margin-bottom: 15px;
+    color: hsl(26, 100%, 55%);
+    text-transform: uppercase;
+}
+
+.product .product-info h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.product .product-info p {
+    margin-bottom: 30px;
+    width: 70%;
+    color: hsl(220, 14%, 75%);
+}
+
+.product .product-info .price {
+    margin-bottom: 10px;
+}
+
+.product .product-info .price .main {
+    color: (0, 0%, 0%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.product .product-info .price .discount {
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.product .product-info h6 {
+    margin-bottom: 15px;
+    color: hsl(219, 9%, 45%);
+    font-size: 1em;
+}
+
+.product .product-info .actions {
+    display: flex;
+    gap: 20px;
+}
+
+.product .product-info .actions .quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(223, 64%, 98%);
+    border-radius: 15px;
+}
+
+.product .product-info .actions .quantity button {
+    border: none;
+    color: hsl(26, 100%, 55%);
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 10px 15px;
+    background-color: transparent;
+}
+
+.product .product-info .actions .quantity span {
+    padding: 15px;
+    font-size: 1em;
+    font-weight: 700;
+    color: #000;
+}
+
+.product .product-info .actions .add-to-cart {
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 15px;
+    border: none;
+    padding: 10px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color:hsl(25, 100%, 94%);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.product .product-info .actions .add-to-cart img {
+    filter: invert(1);
+}
+
